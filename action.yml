@@ -1,0 +1,12 @@
+name: 'Check if a milestone can be released '
+description: 'Check if all the conditions defined in the software quality plan for a milestone to be released are met.'
+author: 'The Software Development Team at InfoRLife SA <dev@inforlife.ch>'
+branding:
+  icon: filter
+  color: yellow
+runs:
+  using: composite
+  steps:
+    - run: |
+        bundle exec ruby check.rb
+      shell: bash
