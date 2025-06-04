@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo/milestones?state=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.6.2
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 14 Dec 2017 08:41:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4956'
+      X-Ratelimit-Reset:
+      - '1513242937'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"6aef564efe68b495dea74b858f5695d9"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.040520'
+      X-Github-Request-Id:
+      - BBC6:3153:15F794:33C22E:5A32392F
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/2","html_url":"https://github.com/inforlife/existing-repo/milestone/2","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/2/labels","id":2979118,"number":2,"title":"2017.2","description":"","creator":{"login":"sigfrid","id":3609259,"avatar_url":"https://avatars1.githubusercontent.com/u/3609259?v=4","gravatar_id":"","url":"https://api.github.com/users/sigfrid","html_url":"https://github.com/sigfrid","followers_url":"https://api.github.com/users/sigfrid/followers","following_url":"https://api.github.com/users/sigfrid/following{/other_user}","gists_url":"https://api.github.com/users/sigfrid/gists{/gist_id}","starred_url":"https://api.github.com/users/sigfrid/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sigfrid/subscriptions","organizations_url":"https://api.github.com/users/sigfrid/orgs","repos_url":"https://api.github.com/users/sigfrid/repos","events_url":"https://api.github.com/users/sigfrid/events{/privacy}","received_events_url":"https://api.github.com/users/sigfrid/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"closed","created_at":"2017-12-14T08:26:41Z","updated_at":"2017-12-14T08:39:30Z","due_on":null,"closed_at":"2017-12-14T08:39:30Z"},{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/1","html_url":"https://github.com/inforlife/existing-repo/milestone/1","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/1/labels","id":2416007,"number":1,"title":"2017.1","description":"","creator":{"login":"inforlife","id":272616,"avatar_url":"https://avatars1.githubusercontent.com/u/272616?v=4","gravatar_id":"","url":"https://api.github.com/users/inforlife","html_url":"https://github.com/inforlife","followers_url":"https://api.github.com/users/inforlife/followers","following_url":"https://api.github.com/users/inforlife/following{/other_user}","gists_url":"https://api.github.com/users/inforlife/gists{/gist_id}","starred_url":"https://api.github.com/users/inforlife/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/inforlife/subscriptions","organizations_url":"https://api.github.com/users/inforlife/orgs","repos_url":"https://api.github.com/users/inforlife/repos","events_url":"https://api.github.com/users/inforlife/events{/privacy}","received_events_url":"https://api.github.com/users/inforlife/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"closed","created_at":"2017-03-28T09:08:56Z","updated_at":"2017-12-14T08:26:56Z","due_on":null,"closed_at":"2017-12-14T08:26:35Z"}]'
+    http_version:
+  recorded_at: Thu, 14 Dec 2017 08:41:19 GMT
+recorded_with: VCR 3.0.3
