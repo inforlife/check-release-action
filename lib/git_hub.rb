@@ -52,7 +52,7 @@ class GitHub
       @client.get("repos/#{@repository}/rules/branches/#{default_branch}")
              .select { |rule| rule[:type] = "required_status_checks" }
              .flat_map { |rule| rule.dig(:parameters, :required_status_checks) }
-             .compact!
+             .compact
              .map { |check| check[:context] }
     end
   end
