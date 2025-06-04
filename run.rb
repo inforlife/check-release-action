@@ -1,3 +1,3 @@
-require_relative "lib/check"
+require_relative "lib/check_suite"
 
 CheckSuite.new.run
