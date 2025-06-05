@@ -1,0 +1,560 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo/milestones?state=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.18.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Jul 2021 09:53:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"55ffe2d201e36bbf67f735549d5373589543a76d84f01a4990a2ae082eaef86a"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4995'
+      X-Ratelimit-Reset:
+      - '1625219836'
+      X-Ratelimit-Used:
+      - '5'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - C729:6DB1:74897A:81755C:60DEE1FC
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/1","html_url":"https://github.com/inforlife/existing-repo/milestone/1","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/1/labels","id":2416007,"node_id":"MDk6TWlsZXN0b25lMjQxNjAwNw==","number":1,"title":"2017.1","description":"","creator":{"login":"inforlife","id":272616,"node_id":"MDQ6VXNlcjI3MjYxNg==","avatar_url":"https://avatars.githubusercontent.com/u/272616?v=4","gravatar_id":"","url":"https://api.github.com/users/inforlife","html_url":"https://github.com/inforlife","followers_url":"https://api.github.com/users/inforlife/followers","following_url":"https://api.github.com/users/inforlife/following{/other_user}","gists_url":"https://api.github.com/users/inforlife/gists{/gist_id}","starred_url":"https://api.github.com/users/inforlife/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/inforlife/subscriptions","organizations_url":"https://api.github.com/users/inforlife/orgs","repos_url":"https://api.github.com/users/inforlife/repos","events_url":"https://api.github.com/users/inforlife/events{/privacy}","received_events_url":"https://api.github.com/users/inforlife/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"closed","created_at":"2017-03-28T09:08:56Z","updated_at":"2017-12-14T08:26:56Z","due_on":null,"closed_at":"2017-12-14T08:26:35Z"},{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/2","html_url":"https://github.com/inforlife/existing-repo/milestone/2","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/2/labels","id":2979118,"node_id":"MDk6TWlsZXN0b25lMjk3OTExOA==","number":2,"title":"2017.2","description":"","creator":{"login":"sigfrid","id":3609259,"node_id":"MDQ6VXNlcjM2MDkyNTk=","avatar_url":"https://avatars.githubusercontent.com/u/3609259?v=4","gravatar_id":"","url":"https://api.github.com/users/sigfrid","html_url":"https://github.com/sigfrid","followers_url":"https://api.github.com/users/sigfrid/followers","following_url":"https://api.github.com/users/sigfrid/following{/other_user}","gists_url":"https://api.github.com/users/sigfrid/gists{/gist_id}","starred_url":"https://api.github.com/users/sigfrid/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sigfrid/subscriptions","organizations_url":"https://api.github.com/users/sigfrid/orgs","repos_url":"https://api.github.com/users/sigfrid/repos","events_url":"https://api.github.com/users/sigfrid/events{/privacy}","received_events_url":"https://api.github.com/users/sigfrid/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"closed","created_at":"2017-12-14T08:26:41Z","updated_at":"2018-04-25T14:10:06Z","due_on":null,"closed_at":"2017-12-14T08:39:30Z"},{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/3","html_url":"https://github.com/inforlife/existing-repo/milestone/3","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/3/labels","id":3296398,"node_id":"MDk6TWlsZXN0b25lMzI5NjM5OA==","number":3,"title":"2018.1","description":"","creator":{"login":"sigfrid","id":3609259,"node_id":"MDQ6VXNlcjM2MDkyNTk=","avatar_url":"https://avatars.githubusercontent.com/u/3609259?v=4","gravatar_id":"","url":"https://api.github.com/users/sigfrid","html_url":"https://github.com/sigfrid","followers_url":"https://api.github.com/users/sigfrid/followers","following_url":"https://api.github.com/users/sigfrid/following{/other_user}","gists_url":"https://api.github.com/users/sigfrid/gists{/gist_id}","starred_url":"https://api.github.com/users/sigfrid/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sigfrid/subscriptions","organizations_url":"https://api.github.com/users/sigfrid/orgs","repos_url":"https://api.github.com/users/sigfrid/repos","events_url":"https://api.github.com/users/sigfrid/events{/privacy}","received_events_url":"https://api.github.com/users/sigfrid/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"open","created_at":"2018-04-25T13:27:23Z","updated_at":"2018-04-25T13:29:35Z","due_on":null,"closed_at":null},{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/4","html_url":"https://github.com/inforlife/existing-repo/milestone/4","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/4/labels","id":5935134,"node_id":"MDk6TWlsZXN0b25lNTkzNTEzNA==","number":4,"title":"2020.1","description":"","creator":{"login":"sigfrid","id":3609259,"node_id":"MDQ6VXNlcjM2MDkyNTk=","avatar_url":"https://avatars.githubusercontent.com/u/3609259?v=4","gravatar_id":"","url":"https://api.github.com/users/sigfrid","html_url":"https://github.com/sigfrid","followers_url":"https://api.github.com/users/sigfrid/followers","following_url":"https://api.github.com/users/sigfrid/following{/other_user}","gists_url":"https://api.github.com/users/sigfrid/gists{/gist_id}","starred_url":"https://api.github.com/users/sigfrid/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sigfrid/subscriptions","organizations_url":"https://api.github.com/users/sigfrid/orgs","repos_url":"https://api.github.com/users/sigfrid/repos","events_url":"https://api.github.com/users/sigfrid/events{/privacy}","received_events_url":"https://api.github.com/users/sigfrid/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"closed","created_at":"2020-09-30T15:31:48Z","updated_at":"2020-09-30T15:42:53Z","due_on":null,"closed_at":"2020-09-30T15:42:53Z"},{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/5","html_url":"https://github.com/inforlife/existing-repo/milestone/5","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/5/labels","id":6911304,"node_id":"MDk6TWlsZXN0b25lNjkxMTMwNA==","number":5,"title":"2021.1","description":"","creator":{"login":"sigfrid","id":3609259,"node_id":"MDQ6VXNlcjM2MDkyNTk=","avatar_url":"https://avatars.githubusercontent.com/u/3609259?v=4","gravatar_id":"","url":"https://api.github.com/users/sigfrid","html_url":"https://github.com/sigfrid","followers_url":"https://api.github.com/users/sigfrid/followers","following_url":"https://api.github.com/users/sigfrid/following{/other_user}","gists_url":"https://api.github.com/users/sigfrid/gists{/gist_id}","starred_url":"https://api.github.com/users/sigfrid/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sigfrid/subscriptions","organizations_url":"https://api.github.com/users/sigfrid/orgs","repos_url":"https://api.github.com/users/sigfrid/repos","events_url":"https://api.github.com/users/sigfrid/events{/privacy}","received_events_url":"https://api.github.com/users/sigfrid/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"open","created_at":"2021-07-02T09:30:09Z","updated_at":"2021-07-02T09:31:40Z","due_on":null,"closed_at":null}]'
+  recorded_at: Fri, 02 Jul 2021 09:53:00 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo/issues?milestone=5&state=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.18.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Jul 2021 09:53:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"9186c65faee9a2e032ff3a1469e989cff6394c640ffb166a73676ccfa224dc97"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4994'
+      X-Ratelimit-Reset:
+      - '1625219836'
+      X-Ratelimit-Used:
+      - '6'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - C72A:6A7B:18E7390:196A4D1:60DEE1FD
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/inforlife/existing-repo/issues/8","repository_url":"https://api.github.com/repos/inforlife/existing-repo","labels_url":"https://api.github.com/repos/inforlife/existing-repo/issues/8/labels{/name}","comments_url":"https://api.github.com/repos/inforlife/existing-repo/issues/8/comments","events_url":"https://api.github.com/repos/inforlife/existing-repo/issues/8/events","html_url":"https://github.com/inforlife/existing-repo/issues/8","id":935593748,"node_id":"MDU6SXNzdWU5MzU1OTM3NDg=","number":8,"title":"issue
+        #5","user":{"login":"sigfrid","id":3609259,"node_id":"MDQ6VXNlcjM2MDkyNTk=","avatar_url":"https://avatars.githubusercontent.com/u/3609259?v=4","gravatar_id":"","url":"https://api.github.com/users/sigfrid","html_url":"https://github.com/sigfrid","followers_url":"https://api.github.com/users/sigfrid/followers","following_url":"https://api.github.com/users/sigfrid/following{/other_user}","gists_url":"https://api.github.com/users/sigfrid/gists{/gist_id}","starred_url":"https://api.github.com/users/sigfrid/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sigfrid/subscriptions","organizations_url":"https://api.github.com/users/sigfrid/orgs","repos_url":"https://api.github.com/users/sigfrid/repos","events_url":"https://api.github.com/users/sigfrid/events{/privacy}","received_events_url":"https://api.github.com/users/sigfrid/received_events","type":"User","site_admin":false},"labels":[{"id":913656370,"node_id":"MDU6TGFiZWw5MTM2NTYzNzA=","url":"https://api.github.com/repos/inforlife/existing-repo/labels/accepted","name":"accepted","color":"d4c5f9","default":false,"description":""},{"id":913656526,"node_id":"MDU6TGFiZWw5MTM2NTY1MjY=","url":"https://api.github.com/repos/inforlife/existing-repo/labels/approved","name":"approved","color":"3feaa3","default":false,"description":""}],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/5","html_url":"https://github.com/inforlife/existing-repo/milestone/5","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/5/labels","id":6911304,"node_id":"MDk6TWlsZXN0b25lNjkxMTMwNA==","number":5,"title":"2021.1","description":"","creator":{"login":"sigfrid","id":3609259,"node_id":"MDQ6VXNlcjM2MDkyNTk=","avatar_url":"https://avatars.githubusercontent.com/u/3609259?v=4","gravatar_id":"","url":"https://api.github.com/users/sigfrid","html_url":"https://github.com/sigfrid","followers_url":"https://api.github.com/users/sigfrid/followers","following_url":"https://api.github.com/users/sigfrid/following{/other_user}","gists_url":"https://api.github.com/users/sigfrid/gists{/gist_id}","starred_url":"https://api.github.com/users/sigfrid/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sigfrid/subscriptions","organizations_url":"https://api.github.com/users/sigfrid/orgs","repos_url":"https://api.github.com/users/sigfrid/repos","events_url":"https://api.github.com/users/sigfrid/events{/privacy}","received_events_url":"https://api.github.com/users/sigfrid/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"open","created_at":"2021-07-02T09:30:09Z","updated_at":"2021-07-02T09:31:40Z","due_on":null,"closed_at":null},"comments":0,"created_at":"2021-07-02T09:31:29Z","updated_at":"2021-07-02T09:31:40Z","closed_at":"2021-07-02T09:31:40Z","author_association":"COLLABORATOR","active_lock_reason":null,"body":"","performed_via_github_app":null}]'
+  recorded_at: Fri, 02 Jul 2021 09:53:01 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo/tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.18.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Jul 2021 09:53:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"314fd6a7dc74b670de46027e76b78f99a0716c0109bd533900c5a9d624558e92"
+      Last-Modified:
+      - Fri, 02 Jul 2021 09:46:58 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4993'
+      X-Ratelimit-Reset:
+      - '1625219836'
+      X-Ratelimit-Used:
+      - '7'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - C72B:6FFC:111208:11FA59:60DEE1FD
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"name":"2020.1","zipball_url":"https://api.github.com/repos/inforlife/existing-repo/zipball/refs/tags/2020.1","tarball_url":"https://api.github.com/repos/inforlife/existing-repo/tarball/refs/tags/2020.1","commit":{"sha":"0d48938ea92448c30248966033ef286364d24bb7","url":"https://api.github.com/repos/inforlife/existing-repo/commits/0d48938ea92448c30248966033ef286364d24bb7"},"node_id":"MDM6UmVmODY0Mzg3NDU6cmVmcy90YWdzLzIwMjAuMQ=="},{"name":"2017.2","zipball_url":"https://api.github.com/repos/inforlife/existing-repo/zipball/refs/tags/2017.2","tarball_url":"https://api.github.com/repos/inforlife/existing-repo/tarball/refs/tags/2017.2","commit":{"sha":"6802c0315ec3bd1e3a8bfa3a07c6058243cff332","url":"https://api.github.com/repos/inforlife/existing-repo/commits/6802c0315ec3bd1e3a8bfa3a07c6058243cff332"},"node_id":"MDM6UmVmODY0Mzg3NDU6cmVmcy90YWdzLzIwMTcuMg=="},{"name":"2017.1","zipball_url":"https://api.github.com/repos/inforlife/existing-repo/zipball/refs/tags/2017.1","tarball_url":"https://api.github.com/repos/inforlife/existing-repo/tarball/refs/tags/2017.1","commit":{"sha":"bce9354597d25cc5d516818e0ff08e261fbe1238","url":"https://api.github.com/repos/inforlife/existing-repo/commits/bce9354597d25cc5d516818e0ff08e261fbe1238"},"node_id":"MDM6UmVmODY0Mzg3NDU6cmVmcy90YWdzLzIwMTcuMQ=="}]'
+  recorded_at: Fri, 02 Jul 2021 09:53:01 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.18.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Jul 2021 09:53:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"b7ecbc6ff32c77da9935f5f8231a0bbc9020586617a65761ca8bc49af64c7add"
+      Last-Modified:
+      - Fri, 02 Jul 2021 09:46:58 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4992'
+      X-Ratelimit-Reset:
+      - '1625219836'
+      X-Ratelimit-Used:
+      - '8'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - C72C:4BA7:1AA85F:1B454C:60DEE1FD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":86438745,"node_id":"MDEwOlJlcG9zaXRvcnk4NjQzODc0NQ==","name":"existing-repo","full_name":"inforlife/existing-repo","private":false,"owner":{"login":"inforlife","id":272616,"node_id":"MDQ6VXNlcjI3MjYxNg==","avatar_url":"https://avatars.githubusercontent.com/u/272616?v=4","gravatar_id":"","url":"https://api.github.com/users/inforlife","html_url":"https://github.com/inforlife","followers_url":"https://api.github.com/users/inforlife/followers","following_url":"https://api.github.com/users/inforlife/following{/other_user}","gists_url":"https://api.github.com/users/inforlife/gists{/gist_id}","starred_url":"https://api.github.com/users/inforlife/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/inforlife/subscriptions","organizations_url":"https://api.github.com/users/inforlife/orgs","repos_url":"https://api.github.com/users/inforlife/repos","events_url":"https://api.github.com/users/inforlife/events{/privacy}","received_events_url":"https://api.github.com/users/inforlife/received_events","type":"User","site_admin":false},"html_url":"https://github.com/inforlife/existing-repo","description":"Repo
+        used for Inforbot integration testing.","fork":false,"url":"https://api.github.com/repos/inforlife/existing-repo","forks_url":"https://api.github.com/repos/inforlife/existing-repo/forks","keys_url":"https://api.github.com/repos/inforlife/existing-repo/keys{/key_id}","collaborators_url":"https://api.github.com/repos/inforlife/existing-repo/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/inforlife/existing-repo/teams","hooks_url":"https://api.github.com/repos/inforlife/existing-repo/hooks","issue_events_url":"https://api.github.com/repos/inforlife/existing-repo/issues/events{/number}","events_url":"https://api.github.com/repos/inforlife/existing-repo/events","assignees_url":"https://api.github.com/repos/inforlife/existing-repo/assignees{/user}","branches_url":"https://api.github.com/repos/inforlife/existing-repo/branches{/branch}","tags_url":"https://api.github.com/repos/inforlife/existing-repo/tags","blobs_url":"https://api.github.com/repos/inforlife/existing-repo/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/inforlife/existing-repo/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/inforlife/existing-repo/git/refs{/sha}","trees_url":"https://api.github.com/repos/inforlife/existing-repo/git/trees{/sha}","statuses_url":"https://api.github.com/repos/inforlife/existing-repo/statuses/{sha}","languages_url":"https://api.github.com/repos/inforlife/existing-repo/languages","stargazers_url":"https://api.github.com/repos/inforlife/existing-repo/stargazers","contributors_url":"https://api.github.com/repos/inforlife/existing-repo/contributors","subscribers_url":"https://api.github.com/repos/inforlife/existing-repo/subscribers","subscription_url":"https://api.github.com/repos/inforlife/existing-repo/subscription","commits_url":"https://api.github.com/repos/inforlife/existing-repo/commits{/sha}","git_commits_url":"https://api.github.com/repos/inforlife/existing-repo/git/commits{/sha}","comments_url":"https://api.github.com/repos/inforlife/existing-repo/comments{/number}","issue_comment_url":"https://api.github.com/repos/inforlife/existing-repo/issues/comments{/number}","contents_url":"https://api.github.com/repos/inforlife/existing-repo/contents/{+path}","compare_url":"https://api.github.com/repos/inforlife/existing-repo/compare/{base}...{head}","merges_url":"https://api.github.com/repos/inforlife/existing-repo/merges","archive_url":"https://api.github.com/repos/inforlife/existing-repo/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/inforlife/existing-repo/downloads","issues_url":"https://api.github.com/repos/inforlife/existing-repo/issues{/number}","pulls_url":"https://api.github.com/repos/inforlife/existing-repo/pulls{/number}","milestones_url":"https://api.github.com/repos/inforlife/existing-repo/milestones{/number}","notifications_url":"https://api.github.com/repos/inforlife/existing-repo/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/inforlife/existing-repo/labels{/name}","releases_url":"https://api.github.com/repos/inforlife/existing-repo/releases{/id}","deployments_url":"https://api.github.com/repos/inforlife/existing-repo/deployments","created_at":"2017-03-28T09:08:35Z","updated_at":"2021-07-02T09:46:58Z","pushed_at":"2021-07-02T09:46:59Z","git_url":"git://github.com/inforlife/existing-repo.git","ssh_url":"git@github.com:inforlife/existing-repo.git","clone_url":"https://github.com/inforlife/existing-repo.git","svn_url":"https://github.com/inforlife/existing-repo","homepage":"","size":11,"stargazers_count":0,"watchers_count":0,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":0}'
+  recorded_at: Fri, 02 Jul 2021 09:53:02 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo/commits/master/check-runs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.antiope-preview+json
+      User-Agent:
+      - Octokit Ruby Gem 4.18.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Jul 2021 09:53:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"07dc9bd49944aeb832ab38553327d5792d2c231bf17e5396f3200336d5e48473"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.v3; param=antiope-preview; format=json
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4991'
+      X-Ratelimit-Reset:
+      - '1625219836'
+      X-Ratelimit-Used:
+      - '9'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - C72D:6DB4:423E06D:438BCDB:60DEE1FE
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_count":1,"check_runs":[{"id":2971133985,"node_id":"MDg6Q2hlY2tSdW4yOTcxMTMzOTg1","head_sha":"f61a40f987373134966d3d1d04c0832d936f1201","external_id":"51bd6d14-7fb7-5991-2a14-4700763cc12e","url":"https://api.github.com/repos/inforlife/existing-repo/check-runs/2971133985","html_url":"https://github.com/inforlife/existing-repo/runs/2971133985","details_url":"https://github.com/inforlife/existing-repo/runs/2971133985","status":"completed","conclusion":"failure","started_at":"2021-07-02T09:47:05Z","completed_at":"2021-07-02T09:47:16Z","output":{"title":"github-continuous-integration","summary":"There
+        are 1 failures, 0 warnings, and 0 notices.","text":null,"annotations_count":1,"annotations_url":"https://api.github.com/repos/inforlife/existing-repo/check-runs/2971133985/annotations"},"name":"github-continuous-integration","check_suite":{"id":3142259232},"app":{"id":15368,"slug":"github-actions","node_id":"MDM6QXBwMTUzNjg=","owner":{"login":"github","id":9919,"node_id":"MDEyOk9yZ2FuaXphdGlvbjk5MTk=","avatar_url":"https://avatars.githubusercontent.com/u/9919?v=4","gravatar_id":"","url":"https://api.github.com/users/github","html_url":"https://github.com/github","followers_url":"https://api.github.com/users/github/followers","following_url":"https://api.github.com/users/github/following{/other_user}","gists_url":"https://api.github.com/users/github/gists{/gist_id}","starred_url":"https://api.github.com/users/github/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/github/subscriptions","organizations_url":"https://api.github.com/users/github/orgs","repos_url":"https://api.github.com/users/github/repos","events_url":"https://api.github.com/users/github/events{/privacy}","received_events_url":"https://api.github.com/users/github/received_events","type":"Organization","site_admin":false},"name":"GitHub
+        Actions","description":"Automate your workflow from idea to production","external_url":"https://help.github.com/en/actions","html_url":"https://github.com/apps/github-actions","created_at":"2018-07-30T09:30:17Z","updated_at":"2019-12-10T19:04:12Z","permissions":{"actions":"write","checks":"write","contents":"write","deployments":"write","discussions":"write","issues":"write","metadata":"read","organization_packages":"write","packages":"write","pages":"write","pull_requests":"write","repository_hooks":"write","repository_projects":"write","security_events":"write","statuses":"write","vulnerability_alerts":"read"},"events":["check_run","check_suite","create","delete","deployment","deployment_status","discussion","discussion_comment","fork","gollum","issues","issue_comment","label","milestone","page_build","project","project_card","project_column","public","pull_request","pull_request_review","pull_request_review_comment","push","registry_package","release","repository","repository_dispatch","status","watch","workflow_dispatch","workflow_run"]},"pull_requests":[]}]}'
+  recorded_at: Fri, 02 Jul 2021 09:53:02 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.18.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Jul 2021 09:53:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"b7ecbc6ff32c77da9935f5f8231a0bbc9020586617a65761ca8bc49af64c7add"
+      Last-Modified:
+      - Fri, 02 Jul 2021 09:46:58 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4990'
+      X-Ratelimit-Reset:
+      - '1625219836'
+      X-Ratelimit-Used:
+      - '10'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - C72E:130A7:135F9B2:13F6D55:60DEE1FE
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":86438745,"node_id":"MDEwOlJlcG9zaXRvcnk4NjQzODc0NQ==","name":"existing-repo","full_name":"inforlife/existing-repo","private":false,"owner":{"login":"inforlife","id":272616,"node_id":"MDQ6VXNlcjI3MjYxNg==","avatar_url":"https://avatars.githubusercontent.com/u/272616?v=4","gravatar_id":"","url":"https://api.github.com/users/inforlife","html_url":"https://github.com/inforlife","followers_url":"https://api.github.com/users/inforlife/followers","following_url":"https://api.github.com/users/inforlife/following{/other_user}","gists_url":"https://api.github.com/users/inforlife/gists{/gist_id}","starred_url":"https://api.github.com/users/inforlife/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/inforlife/subscriptions","organizations_url":"https://api.github.com/users/inforlife/orgs","repos_url":"https://api.github.com/users/inforlife/repos","events_url":"https://api.github.com/users/inforlife/events{/privacy}","received_events_url":"https://api.github.com/users/inforlife/received_events","type":"User","site_admin":false},"html_url":"https://github.com/inforlife/existing-repo","description":"Repo
+        used for Inforbot integration testing.","fork":false,"url":"https://api.github.com/repos/inforlife/existing-repo","forks_url":"https://api.github.com/repos/inforlife/existing-repo/forks","keys_url":"https://api.github.com/repos/inforlife/existing-repo/keys{/key_id}","collaborators_url":"https://api.github.com/repos/inforlife/existing-repo/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/inforlife/existing-repo/teams","hooks_url":"https://api.github.com/repos/inforlife/existing-repo/hooks","issue_events_url":"https://api.github.com/repos/inforlife/existing-repo/issues/events{/number}","events_url":"https://api.github.com/repos/inforlife/existing-repo/events","assignees_url":"https://api.github.com/repos/inforlife/existing-repo/assignees{/user}","branches_url":"https://api.github.com/repos/inforlife/existing-repo/branches{/branch}","tags_url":"https://api.github.com/repos/inforlife/existing-repo/tags","blobs_url":"https://api.github.com/repos/inforlife/existing-repo/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/inforlife/existing-repo/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/inforlife/existing-repo/git/refs{/sha}","trees_url":"https://api.github.com/repos/inforlife/existing-repo/git/trees{/sha}","statuses_url":"https://api.github.com/repos/inforlife/existing-repo/statuses/{sha}","languages_url":"https://api.github.com/repos/inforlife/existing-repo/languages","stargazers_url":"https://api.github.com/repos/inforlife/existing-repo/stargazers","contributors_url":"https://api.github.com/repos/inforlife/existing-repo/contributors","subscribers_url":"https://api.github.com/repos/inforlife/existing-repo/subscribers","subscription_url":"https://api.github.com/repos/inforlife/existing-repo/subscription","commits_url":"https://api.github.com/repos/inforlife/existing-repo/commits{/sha}","git_commits_url":"https://api.github.com/repos/inforlife/existing-repo/git/commits{/sha}","comments_url":"https://api.github.com/repos/inforlife/existing-repo/comments{/number}","issue_comment_url":"https://api.github.com/repos/inforlife/existing-repo/issues/comments{/number}","contents_url":"https://api.github.com/repos/inforlife/existing-repo/contents/{+path}","compare_url":"https://api.github.com/repos/inforlife/existing-repo/compare/{base}...{head}","merges_url":"https://api.github.com/repos/inforlife/existing-repo/merges","archive_url":"https://api.github.com/repos/inforlife/existing-repo/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/inforlife/existing-repo/downloads","issues_url":"https://api.github.com/repos/inforlife/existing-repo/issues{/number}","pulls_url":"https://api.github.com/repos/inforlife/existing-repo/pulls{/number}","milestones_url":"https://api.github.com/repos/inforlife/existing-repo/milestones{/number}","notifications_url":"https://api.github.com/repos/inforlife/existing-repo/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/inforlife/existing-repo/labels{/name}","releases_url":"https://api.github.com/repos/inforlife/existing-repo/releases{/id}","deployments_url":"https://api.github.com/repos/inforlife/existing-repo/deployments","created_at":"2017-03-28T09:08:35Z","updated_at":"2021-07-02T09:46:58Z","pushed_at":"2021-07-02T09:46:59Z","git_url":"git://github.com/inforlife/existing-repo.git","ssh_url":"git@github.com:inforlife/existing-repo.git","clone_url":"https://github.com/inforlife/existing-repo.git","svn_url":"https://github.com/inforlife/existing-repo","homepage":"","size":11,"stargazers_count":0,"watchers_count":0,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":0}'
+  recorded_at: Fri, 02 Jul 2021 09:53:02 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo/branches/master/protection
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.luke-cage-preview+json
+      User-Agent:
+      - Octokit Ruby Gem 4.18.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Jul 2021 09:53:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"8763b4da2f2107fec7020fdb3aa2494d8ab16fad71dea0951d20d49065cdf059"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.luke-cage-preview; format=json
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4989'
+      X-Ratelimit-Reset:
+      - '1625219836'
+      X-Ratelimit-Used:
+      - '11'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - C72F:4BA4:33557:390BF:60DEE1FE
+    body:
+      encoding: ASCII-8BIT
+      string: '{"url":"https://api.github.com/repos/inforlife/existing-repo/branches/master/protection","required_status_checks":{"url":"https://api.github.com/repos/inforlife/existing-repo/branches/master/protection/required_status_checks","strict":false,"contexts":["github-continuous-integration"],"contexts_url":"https://api.github.com/repos/inforlife/existing-repo/branches/master/protection/required_status_checks/contexts"},"required_pull_request_reviews":{"url":"https://api.github.com/repos/inforlife/existing-repo/branches/master/protection/required_pull_request_reviews","dismiss_stale_reviews":false,"require_code_owner_reviews":false,"required_approving_review_count":1},"enforce_admins":{"url":"https://api.github.com/repos/inforlife/existing-repo/branches/master/protection/enforce_admins","enabled":false},"required_linear_history":{"enabled":false},"allow_force_pushes":{"enabled":false},"allow_deletions":{"enabled":false},"required_conversation_resolution":{"enabled":false}}'
+  recorded_at: Fri, 02 Jul 2021 09:53:02 GMT
+recorded_with: VCR 6.0.0

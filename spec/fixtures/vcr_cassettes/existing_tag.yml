@@ -1,0 +1,234 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo/milestones?state=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.6.2
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 25 Apr 2018 13:38:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4998'
+      X-Ratelimit-Reset:
+      - '1524667099'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"3fdc0ac0deb265f6ff856cbf543c05e4"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Runtime-Rack:
+      - '0.044940'
+      X-Github-Request-Id:
+      - DCDC:1870:84F0D6:139F4EE:5AE084CC
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/1","html_url":"https://github.com/inforlife/existing-repo/milestone/1","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/1/labels","id":2416007,"number":1,"title":"2017.1","description":"","creator":{"login":"inforlife","id":272616,"avatar_url":"https://avatars1.githubusercontent.com/u/272616?v=4","gravatar_id":"","url":"https://api.github.com/users/inforlife","html_url":"https://github.com/inforlife","followers_url":"https://api.github.com/users/inforlife/followers","following_url":"https://api.github.com/users/inforlife/following{/other_user}","gists_url":"https://api.github.com/users/inforlife/gists{/gist_id}","starred_url":"https://api.github.com/users/inforlife/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/inforlife/subscriptions","organizations_url":"https://api.github.com/users/inforlife/orgs","repos_url":"https://api.github.com/users/inforlife/repos","events_url":"https://api.github.com/users/inforlife/events{/privacy}","received_events_url":"https://api.github.com/users/inforlife/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"closed","created_at":"2017-03-28T09:08:56Z","updated_at":"2017-12-14T08:26:56Z","due_on":null,"closed_at":"2017-12-14T08:26:35Z"},{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/2","html_url":"https://github.com/inforlife/existing-repo/milestone/2","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/2/labels","id":2979118,"number":2,"title":"2017.2","description":"","creator":{"login":"sigfrid","id":3609259,"avatar_url":"https://avatars1.githubusercontent.com/u/3609259?v=4","gravatar_id":"","url":"https://api.github.com/users/sigfrid","html_url":"https://github.com/sigfrid","followers_url":"https://api.github.com/users/sigfrid/followers","following_url":"https://api.github.com/users/sigfrid/following{/other_user}","gists_url":"https://api.github.com/users/sigfrid/gists{/gist_id}","starred_url":"https://api.github.com/users/sigfrid/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sigfrid/subscriptions","organizations_url":"https://api.github.com/users/sigfrid/orgs","repos_url":"https://api.github.com/users/sigfrid/repos","events_url":"https://api.github.com/users/sigfrid/events{/privacy}","received_events_url":"https://api.github.com/users/sigfrid/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"closed","created_at":"2017-12-14T08:26:41Z","updated_at":"2017-12-14T08:43:09Z","due_on":null,"closed_at":"2017-12-14T08:39:30Z"},{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/3","html_url":"https://github.com/inforlife/existing-repo/milestone/3","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/3/labels","id":3296398,"number":3,"title":"2018.1","description":"","creator":{"login":"sigfrid","id":3609259,"avatar_url":"https://avatars1.githubusercontent.com/u/3609259?v=4","gravatar_id":"","url":"https://api.github.com/users/sigfrid","html_url":"https://github.com/sigfrid","followers_url":"https://api.github.com/users/sigfrid/followers","following_url":"https://api.github.com/users/sigfrid/following{/other_user}","gists_url":"https://api.github.com/users/sigfrid/gists{/gist_id}","starred_url":"https://api.github.com/users/sigfrid/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sigfrid/subscriptions","organizations_url":"https://api.github.com/users/sigfrid/orgs","repos_url":"https://api.github.com/users/sigfrid/repos","events_url":"https://api.github.com/users/sigfrid/events{/privacy}","received_events_url":"https://api.github.com/users/sigfrid/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"open","created_at":"2018-04-25T13:27:23Z","updated_at":"2018-04-25T13:29:35Z","due_on":null,"closed_at":null}]'
+    http_version:
+  recorded_at: Wed, 25 Apr 2018 13:38:20 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo/issues?milestone=1&state=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.6.2
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 25 Apr 2018 13:38:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4997'
+      X-Ratelimit-Reset:
+      - '1524667099'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"66ea3e76bd7f8aca7dcb4bbb971873b3"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Runtime-Rack:
+      - '0.065677'
+      X-Github-Request-Id:
+      - DCDD:1871:BFBF6F:1A70DE1:5AE084CC
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/inforlife/existing-repo/issues/1","repository_url":"https://api.github.com/repos/inforlife/existing-repo","labels_url":"https://api.github.com/repos/inforlife/existing-repo/issues/1/labels{/name}","comments_url":"https://api.github.com/repos/inforlife/existing-repo/issues/1/comments","events_url":"https://api.github.com/repos/inforlife/existing-repo/issues/1/events","html_url":"https://github.com/inforlife/existing-repo/issues/1","id":217494692,"number":1,"title":"issue
+        #1","user":{"login":"inforlife","id":272616,"avatar_url":"https://avatars1.githubusercontent.com/u/272616?v=4","gravatar_id":"","url":"https://api.github.com/users/inforlife","html_url":"https://github.com/inforlife","followers_url":"https://api.github.com/users/inforlife/followers","following_url":"https://api.github.com/users/inforlife/following{/other_user}","gists_url":"https://api.github.com/users/inforlife/gists{/gist_id}","starred_url":"https://api.github.com/users/inforlife/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/inforlife/subscriptions","organizations_url":"https://api.github.com/users/inforlife/orgs","repos_url":"https://api.github.com/users/inforlife/repos","events_url":"https://api.github.com/users/inforlife/events{/privacy}","received_events_url":"https://api.github.com/users/inforlife/received_events","type":"User","site_admin":false},"labels":[{"id":913656370,"url":"https://api.github.com/repos/inforlife/existing-repo/labels/accepted","name":"accepted","color":"d4c5f9","default":false},{"id":913656526,"url":"https://api.github.com/repos/inforlife/existing-repo/labels/approved","name":"approved","color":"3feaa3","default":false}],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":{"url":"https://api.github.com/repos/inforlife/existing-repo/milestones/1","html_url":"https://github.com/inforlife/existing-repo/milestone/1","labels_url":"https://api.github.com/repos/inforlife/existing-repo/milestones/1/labels","id":2416007,"number":1,"title":"2017.1","description":"","creator":{"login":"inforlife","id":272616,"avatar_url":"https://avatars1.githubusercontent.com/u/272616?v=4","gravatar_id":"","url":"https://api.github.com/users/inforlife","html_url":"https://github.com/inforlife","followers_url":"https://api.github.com/users/inforlife/followers","following_url":"https://api.github.com/users/inforlife/following{/other_user}","gists_url":"https://api.github.com/users/inforlife/gists{/gist_id}","starred_url":"https://api.github.com/users/inforlife/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/inforlife/subscriptions","organizations_url":"https://api.github.com/users/inforlife/orgs","repos_url":"https://api.github.com/users/inforlife/repos","events_url":"https://api.github.com/users/inforlife/events{/privacy}","received_events_url":"https://api.github.com/users/inforlife/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":1,"state":"closed","created_at":"2017-03-28T09:08:56Z","updated_at":"2017-12-14T08:26:56Z","due_on":null,"closed_at":"2017-12-14T08:26:35Z"},"comments":0,"created_at":"2017-03-28T09:11:07Z","updated_at":"2018-04-25T13:38:04Z","closed_at":"2017-12-14T08:26:56Z","author_association":"OWNER","body":""}]'
+    http_version:
+  recorded_at: Wed, 25 Apr 2018 13:38:20 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/inforlife/existing-repo/tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.6.2
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 25 Apr 2018 13:38:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4996'
+      X-Ratelimit-Reset:
+      - '1524667099'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"01e390cfe85019914ce1b5f705deb18e"
+      Last-Modified:
+      - Mon, 26 Jun 2017 17:02:18 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Runtime-Rack:
+      - '0.044330'
+      X-Github-Request-Id:
+      - DCDE:1871:BFBFAE:1A70E59:5AE084CD
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"name":"2017.2","zipball_url":"https://api.github.com/repos/inforlife/existing-repo/zipball/2017.2","tarball_url":"https://api.github.com/repos/inforlife/existing-repo/tarball/2017.2","commit":{"sha":"f6030d32d37b87a9caa574bfb18c86004bdc4968","url":"https://api.github.com/repos/inforlife/existing-repo/commits/f6030d32d37b87a9caa574bfb18c86004bdc4968"}},{"name":"2017.1","zipball_url":"https://api.github.com/repos/inforlife/existing-repo/zipball/2017.1","tarball_url":"https://api.github.com/repos/inforlife/existing-repo/tarball/2017.1","commit":{"sha":"bce9354597d25cc5d516818e0ff08e261fbe1238","url":"https://api.github.com/repos/inforlife/existing-repo/commits/bce9354597d25cc5d516818e0ff08e261fbe1238"}}]'
+    http_version:
+  recorded_at: Wed, 25 Apr 2018 13:38:21 GMT
+recorded_with: VCR 3.0.3

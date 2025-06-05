@@ -1,0 +1,35 @@
+name: continuous-integration
+
+on:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          # ruby-version: from .ruby-version
+          bundler-cache: true
+
+      - name: Run RSpec
+        run: |
+          bin/rspec spec --fail-fast --format progress
+        env:
+          RUBYOPT: -W0
+
+
