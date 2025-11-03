@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/repos/inforlife/existing-repo/milestones?state=all
+    uri: https://api.github.com/repos/inforlife/existing-repo/milestones?direction=desc&sort=created&state=all
     body:
       encoding: US-ASCII
       string: ''
