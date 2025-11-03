@@ -35,8 +35,8 @@ class GitHub
   private
 
   def milestone
-    @milestone ||= @client.milestones(@repository, state: "all")
-                             .detect { |milestone| milestone[:title] == @milestone_title }
+    @milestone ||= @client.milestones(@repository, state: "all", sort: "created", direction: "desc")
+                          .detect { |milestone| milestone[:title] == @milestone_title }
   end
 
   def milestone_issues
