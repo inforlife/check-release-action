@@ -30,7 +30,7 @@ RSpec.describe CheckSuite do
     end
   end
 
-  context "when the ilestone has still at least an open issue" do
+  context "when the milestone has still at least an open issue" do
     before do
       ENV["GITHUB_MILESTONE"] = "2017.2"
     end
